@@ -41,4 +41,7 @@ class Classifier:
                 print(f'iteration {it}/{num_iters}: loss {loss}')               # Printing the loss periodically
 
         return loss_history
- 
+
+    def predict(self, X):
+        y_pred = np.argmax(X.dot(self.W), axis=1)                               # Predicting the class labels based on the highest scores
+        return y_pred
