@@ -19,3 +19,13 @@ class MulticlassSVM:
         margins[np.arange(num_train), y] = 0
         loss = np.sum(margins) / num_train + 0.5 * reg * np.sum(W * W)
  
+        # Compute the binary matrix
+        binary = margins
+        binary[margins > 0] = 1
+        # Compute the row sums of the binary matrix
+        row_sum = np.sum(binary, axis=1)
+        # Update the binary matrix with the correct class labels
+        binary[np.arange(num_train), y] -= row_sum
+        # Compute the gradient of the loss with respect to W
+        dW = X.T.dot(binary) / num_train + reg * W
+        return loss, dW
