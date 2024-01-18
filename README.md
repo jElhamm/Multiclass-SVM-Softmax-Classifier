@@ -84,8 +84,8 @@
 
 ## References
 
-   [Support Vector Machine (SVM) Algorithm](https://www.geeksforgeeks.org/support-vector-machine-algorithm/)
-   [Introduction to Softmax for Neural Network](https://www.analyticsvidhya.com/blog/2021/04/introduction-to-softmax-for-neural-network/)
+   - [Support Vector Machine (SVM) Algorithm](https://www.geeksforgeeks.org/support-vector-machine-algorithm/)
+   - [Introduction to Softmax for Neural Network](https://www.analyticsvidhya.com/blog/2021/04/introduction-to-softmax-for-neural-network/)
 
 
 
